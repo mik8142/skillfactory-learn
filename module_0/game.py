@@ -55,6 +55,6 @@ def score_game(test_fn, min_value=1, max_value=100, iters=1000):
 
     return mean_score
 
-
-score = score_game(game_core)
-print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
+if __name__ == "__main__":
+    score = score_game(game_core)
+    print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
